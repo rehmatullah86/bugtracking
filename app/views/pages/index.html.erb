@@ -1,0 +1,28 @@
+
+<div class="jumbotron center ">
+<h1>Welcome to Bug Tracking System</h1>
+<h2>Website for Bug tracking</h2>
+  <%if !user_signed_in? %>
+    <h4 align="center"><%=link_to "Sign Up",new_user_registration_path%></h4>
+  <%end%>
+</div>
+
+<div class="row">
+  <div class="col-lg-4">
+        <h2>Unit Testing</h2>
+      <p>Unit testing can be used to test individual components of a bug tracking system, such as the database, user interface, and reporting functionality.
+By testing these components in isolation, developers can identify and fix issues early in the development process, reducing the risk of bugs and errors in the final product.
+Unit testing can help to ensure that the bug tracking system meets the requirements and specifications of the client or end-user. </p>
+      <p><a class="btn btn-primary btn-xlarge" href="#" role="button">View details »</a></p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Performance testing</h2>
+      <p>Performance testing typically involves simulating a high load on the system, often using specialized tools or scripts. The load can be increased gradually to test the system's response and performance under different levels of stress.Performance testing can help to ensure that the bug tracking system is scalable and can handle increasing numbers of bugs and issues as the development project progresses. It also helps to identify performance issues early, making it easier and cheaper to fix them.</p>
+      <p><a class="btn btn-primary btn-xlarge" href="#" role="button">View details »</a></p>
+  </div>
+  <div class="col-lg-4">
+    <h2>System Testing</h2>
+      <p>System is tested as a whole, with all its components and integrations in place. The aim is to ensure that the bug tracking system works as intended, meets the requirements and specifications of the client or end-user, and is free from bugs and errors.System testing can help to ensure that the bug tracking system is ready for deployment and use by the end-users. It also helps to identify and fix issues early, making it easier and cheaper to develop and maintain the system.</p>
+      <p><a class="btn btn-primary btn-xlarge" href="#" role="button">View details »</a></p>
+  </div>
+</div>
